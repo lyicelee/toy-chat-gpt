@@ -13,8 +13,7 @@ function OpenAIUtil(_props) {
 
             /** チャットAPIのURL */
             const CHAT_API_URL = "https://api.openai.com/v1/chat/completions";
-        
-            const API_KEY = "";
+            const API_KEY = process.env.REACT_APP_API_KEY;
 
             fetch(CHAT_API_URL, {
                 method: 'POST',
